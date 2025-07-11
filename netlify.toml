@@ -1,0 +1,73 @@
+[build]
+  # No build command needed for static HTML
+  publish = "."
+
+[build.environment]
+  # Environment variables (if needed)
+  NODE_VERSION = "18"
+
+# Redirect rules
+[[redirects]]
+  # Redirect all 404s to the main page
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    
+    # Caching headers
+    Cache-Control = "public, max-age=31536000"
+
+# Specific headers for HTML files
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Headers for CSS and JS files
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Headers for images
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Form handling (if needed in the future)
+# [[redirects]]
+#   from = "/contact"
+#   to = "/.netlify/functions/contact"
+#   status = 200
+
+# Custom 404 page (optional)
+# [[redirects]]
+#   from = "/404"
+#   to = "/404.html"
+#   status = 404 

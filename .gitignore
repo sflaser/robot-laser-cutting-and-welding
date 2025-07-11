@@ -1,0 +1,56 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Office files (temporary)
+~$*
+*.tmp
+.~lock.*
+
+# Excel files (we'll keep the actual files but ignore temp versions)
+~$*.xlsx
+~$*.xls
+
+# Word documents (temporary versions)
+~$*.docx
+~$*.doc
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if we add any build tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs (if any)
+dist/
+build/
+
+# Backup files
+*.bak
+*.backup
+
+# Compressed files (unless intentional)
+*.zip
+*.rar
+*.7z
+
+# System files
+*.sys
+*.pid
+*.seed 
