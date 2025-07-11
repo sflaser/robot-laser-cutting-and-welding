@@ -141,15 +141,32 @@
         }
         
         .blog-article-content .header h1 {
-            font-size: 3.5rem !important;
+            font-size: 2.8rem !important;
             font-weight: 700 !important;
             margin-bottom: 15px;
             color: #212529 !important;
         }
         
-
+        /* Video Container */
+        .blog-article-content .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
         
-
+        .blog-article-content .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
         
         /* Main Content */
         .blog-article-content .main {
@@ -173,7 +190,7 @@
         /* Typography */
         .blog-article-content h2 {
             color: #212529 !important;
-            font-size: 2.6rem !important;
+            font-size: 2.2rem !important;
             font-weight: 600 !important;
             margin-bottom: 20px;
             padding-bottom: 10px;
@@ -182,20 +199,20 @@
         
         .blog-article-content h3 {
             color: #343a40 !important;
-            font-size: 2rem !important;
+            font-size: 1.6rem !important;
             margin: 25px 0 15px 0;
             font-weight: 600 !important;
         }
         
         .blog-article-content h4 {
             color: #495057 !important;
-            font-size: 1.7rem !important;
+            font-size: 1.4rem !important;
             margin: 20px 0 10px 0;
             font-weight: 600 !important;
         }
         
         .blog-article-content p {
-            font-size: 1.3rem !important;
+            font-size: 1.1rem !important;
             margin-bottom: 15px;
             line-height: 1.7;
         }
@@ -227,7 +244,7 @@
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #dee2e6;
-            font-size: 1.2rem !important;
+            font-size: 1rem !important;
         }
         
         .blog-article-content .tech-table th {
@@ -277,7 +294,7 @@
         
         .blog-article-content .equipment-category h4 {
             color: #ff8c00;
-            font-size: 1.5rem !important;
+            font-size: 1.3rem !important;
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -290,7 +307,7 @@
         .blog-article-content .equipment-list li {
             padding: 6px 0;
             border-bottom: 1px solid #e9ecef;
-            font-size: 1.2rem !important;
+            font-size: 1rem !important;
         }
         
         .blog-article-content .equipment-list li:last-child {
@@ -319,7 +336,7 @@
         }
         
         .blog-article-content .stat-number {
-            font-size: 2.6rem !important;
+            font-size: 2.2rem !important;
             font-weight: 700;
             color: #ff8c00;
             display: block;
@@ -327,7 +344,7 @@
         
         .blog-article-content .stat-label {
             color: #6c757d;
-            font-size: 1.1rem !important;
+            font-size: 0.9rem !important;
             margin-top: 5px;
         }
         
@@ -349,14 +366,14 @@
         
         .blog-article-content .spec-label {
             display: block;
-            font-size: 1.1rem !important;
+            font-size: 0.9rem !important;
             color: #6c757d;
             margin-bottom: 5px;
         }
         
         .blog-article-content .spec-value {
             display: block;
-            font-size: 1.4rem !important;
+            font-size: 1.2rem !important;
             color: #ff8c00;
             font-weight: 600;
         }
@@ -377,7 +394,7 @@
         .blog-article-content .timeline-item h4 {
             color: #ff8c00;
             margin-bottom: 8px;
-            font-size: 1.5rem !important;
+            font-size: 1.3rem !important;
         }
         
         /* Code Blocks */
@@ -486,7 +503,7 @@
             padding: 12px 30px;
             border: none;
             border-radius: 6px;
-            font-size: 1.2rem !important;
+            font-size: 1.1rem !important;
             font-weight: 600;
             cursor: pointer;
             text-decoration: none;
@@ -503,7 +520,7 @@
         /* Responsive */
         @media (max-width: 768px) {
             .blog-article-content .header h1 {
-                font-size: 3rem !important;
+                font-size: 2.4rem !important;
             }
             
             .blog-article-content .section {
@@ -573,6 +590,18 @@
 
                     <h4>Multi-Axis Processing Capability</h4>
                     <p>6-axis and 7-axis robotic systems enable complex 3D processing paths, allowing for sophisticated cuts, bevels, and weld joints that would be impossible with conventional fixed-head systems.</p>
+                    
+                    <h3>Technology Demonstration</h3>
+                    <p>Watch this comprehensive demonstration of robot laser cutting and welding technology in action, showcasing the precision, speed, and versatility of integrated laser processing systems:</p>
+                    
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/6_34VFRxETM" 
+                            title="Robot Laser Cutting & Welding Technology Demonstration"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </section>
 
                 <!-- Core Advantages -->
