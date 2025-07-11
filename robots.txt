@@ -31,7 +31,7 @@ User-agent: YouBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://YOUR-NETLIFY-DOMAIN.netlify.app/sitemap.xml
+Sitemap: https://robotlaserwelding.netlify.app/sitemap.xml
 
 # Crawl-delay (optional, helps prevent overloading)
 Crawl-delay: 1 
